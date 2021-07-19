@@ -8,13 +8,20 @@ const cs = function(el){
 pizzaJson.map(function(item, index){
     let pizzaItem = c('.models .pizza-item').cloneNode(true);
 
+    pizzaItem.setAttribute('data-key', index);
     pizzaItem.querySelector('.pizza-item--img img').src = item.img;
     pizzaItem.querySelector('.pizza-item--price').innerHTML = `R$ ${item.price.toFixed(2)}`;
     pizzaItem.querySelector('.pizza-item--name').innerHTML = item.name;
     pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description;
     pizzaItem.querySelector('a').addEventListener('click', function(e){
         e.preventDefault();
-        console.log('clicou na pizza!');
+        let key = e.target.closest('.pizza-item').getAttribute('data-key');
+
+        c('.pizzaBig img').src = pizzaJson[key].img;
+        c('.pizzaInfo h1').innerHTML = pizzaJson[key].name; 
+        c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description; 
+        
+      
 
         c('.pizzaWindowArea').style.opacity = 0; 
         c('.pizzaWindowArea').style.display = 'flex';
@@ -33,3 +40,4 @@ pizzaJson.map(function(item, index){
 // Duvidas:
 // passa index e item dentro da função
 // Chamar json com 'item.'
+// Pega as informações da pizza e mostra elas no modal
