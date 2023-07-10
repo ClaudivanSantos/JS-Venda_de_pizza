@@ -1,5 +1,5 @@
 <h1 align="center">
-🚀 Mario Jump
+🚀 Pizza
 </h1>
 
 <p>
@@ -12,7 +12,7 @@
 <img size='100%' src=".github/pizza.png" alt="screen" border="0">
 
 ## 💻 Projeto
-O projeto foi inspirado no "joguinho do dinossauro" do chrome e adaptado para o Mario, 
+O projeto foi criado inspirado em uma pizzaria online, 
 
 
 ## 🤝 Como executar
