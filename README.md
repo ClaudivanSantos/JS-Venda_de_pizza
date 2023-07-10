@@ -9,7 +9,7 @@
 
 ## 📫 Visualização do projeto
 
-<img size='100%' src=".github/screen.png" alt="screen" border="0">
+<img size='100%' src=".github/pizza.png" alt="screen" border="0">
 
 ## 💻 Projeto
 O projeto foi inspirado no "joguinho do dinossauro" do chrome e adaptado para o Mario, 
